@@ -94,7 +94,7 @@ for layer in baseModel.layers:
 # compile our model
 print("[INFO] compiling model...")
 opt = Adam(lr=INIT_LR, decay=INIT_LR / EPOCHS)
-model.compile(loss="binary_crossentropy", optimizer=opt,#important
+model.compile(loss="binary_crossentropy", optimizer=opt,#important to learn
 	metrics=["accuracy"])
 
 # train the head of the network
